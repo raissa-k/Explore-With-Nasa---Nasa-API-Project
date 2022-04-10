@@ -29,7 +29,7 @@
          </div>
         <li><a class="navLink" href="#about">About</a></li>
         <li><a class="navLink" href="#pictureSection">Picture</a></li>
-        <li><a class="navLink" href="#contribute">Video</a></li>
+        <li><a class="navLink" href="#videoSection">Video</a></li>
       </ul>
     </nav>
 
@@ -84,7 +84,7 @@
               accessible experiences.
             </p>
             <p>
-              <a href="#contribute">Join Style Stage as a contributor</a> to refresh your CSS
+              <a href="#videoSection">Join Style Stage as a contributor</a> to refresh your CSS
               skills, and learn from others!
             </p>
           </section>
@@ -118,13 +118,21 @@
               Most importantly - have fun and learn something new! Check out the
               <a href="/resources/">resources</a> for tips and inspiration.
             </p>
-            <a href="/pictureSection/" class="link-pictureSection">Review full pictureSection</a>
+            <button type="button" class="link-pictureSection">Click to see today's Picture of the Day</button>
+            <p>Alternatively, you can choose the date of the picture you wish to see, up to today.</p>
+            <p>Note that the first Astronomy Picture of the Day was posted on June 16th, 1996, so that's how far back you can go.</p>
+            <label for="apodDate">Date of the Astronomy Picture you want to see:</label>
+            <input type="date" id="apodDate" name="pictureDate" min="1995-06-16" max="3000-06-16">
+            <img class="apodImg" src="" aria-labelledby="apodTitle">
+            <h3 id="apodTitle"></h3>
+            <blockquote id="apodQuote"><p class="apodCaption"></p></blockquote>
+            </figure>
           </section>
         </article>
-        <article id="contribute">
+        <article id="videoSection">
           <section class="container">
-            <h2>Contribute</h2>
-            <p>All who enjoy the craft of writing CSS are welcome to contribute!</p>
+            <h2>videoSection</h2>
+            <p>All who enjoy the craft of writing CSS are welcome to videoSection!</p>
             <p>
               By participating as a contributor, your work will be shared with your provided
               attribution as long as Style Stage is online, your stylesheet link and any asset links
@@ -133,7 +141,7 @@
             </p>
           </section>
           <section class="container">
-            <h3>Steps to Contribute</h3>
+            <h3>Steps to videoSection</h3>
             <ol>
               <li>
                 Download the source files listed below to use as a reference to build your
@@ -165,6 +173,7 @@
         <h4 id="credits-title">Resources used</h4>
         <ul>
           <li><span>Style:</span><a href="https://stylestage.dev/styles/yellowed/">Yellowed by Sowmya Seshadri</a></li>
+          <li><span>Base layout:</span><a href="https://github.com/5t3ph/stylestage">StyleStage by Stephanie Eckles</a></li>
           <li><span>APIs available on </span><a href="https://api.nasa.gov/">NASA's list of open APIs</a></li>
         </ul>
       </div>
@@ -172,17 +181,13 @@
     
     <footer id="credits" class="page-footer">
       <div class="container">
-        <p>
-          <a href="https://api.nasa.gov/">NASA APIs</a>
-        </p>
-        <p>
-          Layout based on <a href="https://twitter.com/5t3ph">Stephanie Eckles (@5t3ph)</a>'s project <a href="https://github.com/5t3ph/stylestage">StyleStage</a>.
-        </p>
-        <p>
-          Style based on .
-        </p>
+        <ul>
+          <li><a href="https://twitter.com/KzRaissa" class="link-twittercontact">Contact me on Twitter</a></li>
+          <li><a href="https://github.com/raissa-k/Explore-With-Nasa---Nasa-API-Project" class="link-rss">Project code on Github</a></li>
+        </ul>
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/nasaAPI.js"></script>
   </body>
 </html>
