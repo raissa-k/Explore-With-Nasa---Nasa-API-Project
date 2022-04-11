@@ -13,9 +13,6 @@
     <header>
       <div class="container">
         <h1>Explore with NASA</h1>
-        <p>
-          by <a href="https://twitter.com/KzRaissa">Raissa K</a>
-        </p>
       </div>
     </header>
     <nav>
@@ -40,49 +37,36 @@
           <section class="container">
             <h2>About this project</h2>
             <p>
-              NASA has a comprehensive list of APIs that allow access to all sorts of information, and this website allows you to access some of it. 
+              NASA has a comprehensive list of APIs that allow access to all sorts of information, and this website allows you to check some of it. 
             </p>
             <p>
-              In the <a href="#pictureSection">Picture</a> section, 
+              In the <a href="#pictureSection">Picture of the Day</a> section, a simple click will show you today's snippet of our universe. Despite the name of the section, a click may return a video, too!  
             </p>
             <p>
-              The HTML for this page was created to be semantic, accessible, and free of nearly all
-              other opinions. Nested sectioning elements with the class `.container` serve as
-              additional style aids since you do not have access to alter the base HTML. IDs are
-              included where needed for nav anchors or accessibility, and a small number of
-              additional classes are provided for key elements without IDs. Don't forget the
-              `.skip-link`!
+              If you're feeling adventurous you can hop into the <a href="#apodBirthday">Time Machine</a> and retrieve a photo or video from the archive!
+            </p>
+            <p>In fact, the Time Machine is PERFECT for killing those few minutes before clocking out, or for helping you craft a nice message with subtle "sorry I forgot to buy flowers" undertones.
             </p>
           </section>
         </article>
         <article id="pictureSection">
           <section class="container">
-            <h2>pictureSection</h2>
+            <h2>Picture of the Day</h2>
             <p>
-              Contributing a stylesheet to Style Stage means you agree to abide by
-              <a href="/pictureSection/">our full pictureSection</a>.
-            </p>
-            <h3>TL;DR</h3>
-            <p>
-              All submissions will be autoprefixed and prepended with the
-              <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA license</a>
-              as well as attribution using the metadata you provide. You may use any build setup you
-              prefer, but the final submission should be the compiled, unminified CSS. You retain
-              the copyright to original graphics and must ensure all graphics used are appropriately
-              licensed. All asset links, including fonts, must be absolute to external resources.
-              Stylesheets will be saved into the Github repo, and detected changes that violate the
-              pictureSection are cause for removal.
+              Here's your daily dose of space goodness.
             </p>
             <p>
-              Ensure your design is responsive, and that it passes accessible contrast (we'll be
-              using aXe to verify). Animations should be removed via `prefers-reduced-motion`.
-              Cutting-edge techniques should come with a fallback if needed to not severely impact
-              the user experience. No content may be permanently hidden, and hidden items must come
-              with an accessible viewing technique. Page load time should not exceed 3 seconds.
+              Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.
             </p>
             <p>
-              Most importantly - have fun and learn something new! Check out the
-              <a href="/resources/">resources</a> for tips and inspiration.
+              In NASA's own words:
+            </p>
+            <blockquote>
+              <p>One of the most popular websites at NASA is the Astronomy Picture of the Day. In fact, this website is one of the most popular websites across all federal agencies. It has the popular appeal of a Justin Bieber video.
+              </p>
+            </blockquote>
+            <p>
+              And you know what? I beliebe that.
             </p>
             <button type="button" class="link-pictureSection">Click to see today's Picture of the Day</button>
             <div id="apodPic"></div>
@@ -90,9 +74,10 @@
         </article>
         <article id="apodBirthday">
           <section class="container">
-            <h2>On your birthday</h2>
-            <p>Curious to see what the Astronomy Picture of the Day was on your birthday? Choose the date and find out!</p>
+            <h2>Time machine</h2>
+            <p>Curious about what the Astronomy Picture was on a specific day? Choose the date and find out!</p>
             <p>Note that the first Astronomy Picture of the Day was posted on June 16th, 1995, so that's how far back you can go.</p>
+            <p>Sorry, fellow Millenials!</p>
               <div>
                 <label for="apodDate">Date of the picture you want to check:</label>
                 <input type="date" id="apodDate" name="pictureDate" min="1995-06-16" max="3000-06-16" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
@@ -105,11 +90,13 @@
     </main>
     <aside class="credits" id="credits" aria-labelledby="credits-title">
       <div class="container">
-        <h4 id="credits-title">Resources used</h4>
+        <h3 id="credits-title">Resources used</h3>
         <ul>
           <li><span>Style:</span><a href="https://stylestage.dev/styles/yellowed/">Yellowed by Sowmya Seshadri</a></li>
           <li><span>Base layout:</span><a href="https://github.com/5t3ph/stylestage">StyleStage by Stephanie Eckles</a></li>
           <li><span>APIs available on </span><a href="https://api.nasa.gov/">NASA's list of open APIs</a></li>
+          <li><span>Header photo by</span><a href="https://unsplash.com/@knnslens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kanan Khasmammadov</a>  
+          </li>
         </ul>
       </div>
     </aside>

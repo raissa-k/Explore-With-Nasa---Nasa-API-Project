@@ -127,6 +127,7 @@ button {
 }
 
 .toggle-input {
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -253,6 +254,7 @@ blockquote {
   margin: 3rem 0;
   color: var(--color-primary);
 }
+
 blockquote > * {
   grid-area: blockquote;
 }
@@ -272,6 +274,7 @@ blockquote::before {
   background-color: var(--color-background);
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  opacity: 0.3;
 }
 
 #pictureSection p:nth-of-type(1),
@@ -338,22 +341,28 @@ article,
   list-style: none;
 }
 
-header[data-theme=light]{
+header{
+  position: relative;
   --logomark-height: 3em;
   --logomark-padding: 0 1em;
   display: grid;
-  min-height: 40vh;
+  min-height: 50vh;
   padding: 0 2rem;
   color: var(--color-primary);
 }
 
-header[data-theme=dark]{
-  --logomark-height: 3em;
-  --logomark-padding: 0 1em;
-  display: grid;
-  min-height: 40vh;
-  padding: 0 2rem;
-  color: var(--color-primary);
+header::before, .page-footer::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.25;
+  background-image: url('../nasabg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 header h1 {
@@ -370,6 +379,8 @@ header h1 {
 header .container {
   padding-left: 40px;
   padding-top: 10vh;
+  position: relative;
+  z-index: 2;
 }
 header .container .link-github {
   margin-top: 20px;
@@ -383,7 +394,7 @@ header p {
 }
 @media (max-width: 768px) {
   header {
-    min-height: 40vh;
+    min-height: 50vh;
   }
   header h1 {
     border-left: 10px solid var(--color-primary-alt);
@@ -404,6 +415,7 @@ header p {
 }
 nav ul {
   position: fixed;
+  z-index: 2;
   top: 20px;
   right: 50px;
   margin: 0;
@@ -586,7 +598,7 @@ nav ul li {
 .credits {
   width: 95vw;
   max-width: 80ch;
-  margin: 1rem auto 5vh;
+  margin: 25vh auto 5vh;
   padding: 1.25rem;
   z-index: 1;
   border-bottom: 2px solid var(--color-primary);
@@ -672,6 +684,12 @@ nav ul li {
   padding: 3rem 1rem;
   color: var(--color-text);
 }
+
+.page-footer .container{
+  position: relative;
+  z-index: 2;
+}
+
 .page-footer ul a.link-twittercontact, .page-footer ul a.link-github{
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
