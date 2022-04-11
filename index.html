@@ -28,7 +28,8 @@
           </label>
          </div>
         <li><a class="navLink" href="#about">About</a></li>
-        <li><a class="navLink" href="#pictureSection">Picture</a></li>
+        <li><a class="navLink" href="#pictureSection">Picture of the Day</a></li>
+        <li><a class="navLink" href="#apodBirthday">On your Birthday</a></li>
         <li><a class="navLink" href="#videoSection">Video</a></li>
       </ul>
     </nav>
@@ -51,41 +52,6 @@
               included where needed for nav anchors or accessibility, and a small number of
               additional classes are provided for key elements without IDs. Don't forget the
               `.skip-link`!
-            </p>
-          </section>
-          <section class="container">
-            <h2>Modern CSS Under the Spotlight</h2>
-            <p>
-              Modern CSS has increased and improved the available CSS properties and layout
-              behaviors, and browser support is nearly in sync for most high-touch features.
-            </p>
-            <p>Some examples of modern CSS include:</p>
-            <ul>
-              <li>Flexbox</li>
-              <li>Grid</li>
-              <li>custom variables</li>
-              <li>@supports()</li>
-              <li>gradients</li>
-              <li>animation</li>
-              <li>3D transforms</li>
-              <li>object-fit</li>
-              <li>:focus-within</li>
-              <li>calc()</li>
-              <li>min() / max() / clamp()</li>
-              <li>viewport units</li>
-              <li>scroll-(margin/padding/snap)</li>
-              <li>position: sticky</li>
-              <li>two-value display</li>
-              <li>expanded media query values</li>
-              <li>variable fonts</li>
-            </ul>
-            <p>
-              We also collectively have an improved understanding of what it takes to make
-              accessible experiences.
-            </p>
-            <p>
-              <a href="#videoSection">Join Style Stage as a contributor</a> to refresh your CSS
-              skills, and learn from others!
             </p>
           </section>
         </article>
@@ -119,51 +85,20 @@
               <a href="/resources/">resources</a> for tips and inspiration.
             </p>
             <button type="button" class="link-pictureSection">Click to see today's Picture of the Day</button>
-            <p>Alternatively, you can choose the date of the picture you wish to see, up to today.</p>
-            <p>Note that the first Astronomy Picture of the Day was posted on June 16th, 1996, so that's how far back you can go.</p>
-            <label for="apodDate">Date of the Astronomy Picture you want to see:</label>
-            <input type="date" id="apodDate" name="pictureDate" min="1995-06-16" max="3000-06-16">
-            <img class="apodImg" src="" aria-labelledby="apodTitle">
-            <h3 id="apodTitle"></h3>
-            <blockquote id="apodQuote"><p class="apodCaption"></p></blockquote>
-            </figure>
+            <div id="apodPic"></div>
           </section>
         </article>
-        <article id="videoSection">
+        <article id="apodBirthday">
           <section class="container">
-            <h2>videoSection</h2>
-            <p>All who enjoy the craft of writing CSS are welcome to videoSection!</p>
-            <p>
-              By participating as a contributor, your work will be shared with your provided
-              attribution as long as Style Stage is online, your stylesheet link and any asset links
-              remain valid, and all <a href="/pictureSection/">contributor pictureSection</a> are adhered
-              to.
-            </p>
-          </section>
-          <section class="container">
-            <h3>Steps to videoSection</h3>
-            <ol>
-              <li>
-                Download the source files listed below to use as a reference to build your
-                stylesheet, or start from the
-                <a href="https://github.com/5t3ph/stylestage-sass">Sass template</a>.
-              </li>
-              <li>
-                Host your completed stylesheet at a public URL, and ensure all asset links are
-                absolute URLs to external resources.
-              </li>
-              <li>
-                <a href="https://github.com/5t3ph/stylestage">Create a pull request</a> to add your
-                information as a unique .json file to: src/_data/styles. The schema is detailed in
-                the repo README, and you can review the FAQ on
-                <a href="/pictureSection/#how-do-i-create-a-pull-request-pr">creating a pull request</a
-                >.
-              </li>
-              <li>
-                If your contribution abides by the previously listed pictureSection, your submission
-                will be added!
-              </li>
-            </ol>
+            <h2>On your birthday</h2>
+            <p>Curious to see what the Astronomy Picture of the Day was on your birthday? Choose the date and find out!</p>
+            <p>Note that the first Astronomy Picture of the Day was posted on June 16th, 1995, so that's how far back you can go.</p>
+              <div>
+                <label for="apodDate">Date of the picture you want to check:</label>
+                <input type="date" id="apodDate" name="pictureDate" min="1995-06-16" max="3000-06-16" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
+              </div>
+            <div id="apodBPic">
+            </div>
           </section>
         </article>
       </div>
@@ -183,7 +118,7 @@
       <div class="container">
         <ul>
           <li><a href="https://twitter.com/KzRaissa" class="link-twittercontact">Contact me on Twitter</a></li>
-          <li><a href="https://github.com/raissa-k/Explore-With-Nasa---Nasa-API-Project" class="link-rss">Project code on Github</a></li>
+          <li><a href="https://github.com/raissa-k/Explore-With-Nasa---Nasa-API-Project" class="link-github">Project code on Github</a></li>
         </ul>
       </div>
     </footer>
