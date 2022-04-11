@@ -33,7 +33,6 @@ function getAPOD(){
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-      console.log(data)
       if (document.querySelector('#apodPic').innerHTML.trim() === "") {
       writeAPOD(data)
     }})
@@ -48,7 +47,6 @@ function getBAPOD(){
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${bDate}`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-      console.log(data)
       if (document.querySelector('#apodBPic').innerHTML.trim() == "") {
         writeBAPOD(data)
       }else{

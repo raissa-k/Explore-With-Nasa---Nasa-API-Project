@@ -141,7 +141,6 @@ button {
   border: 0.1rem solid var(--color-background);
   border-radius: 1rem;
   width: 3rem;
-  margin: 0 auto;
   background-color: var(--color-secondary);
   transition: all 0.3s ease;
 }
@@ -446,6 +445,7 @@ nav ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            align-items: center;
     position: relative;
     top: 0px;
     right: 0px;
