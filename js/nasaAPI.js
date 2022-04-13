@@ -1,4 +1,4 @@
-let apiKey = 'lTqGijOmeQzmXX0p6BQGoeUy6ZFcQhUYq4doEh8H'
+let apiKey = 'qgWGpJJSX0ydxx7ihMhIhP3i7Rbq9EEGk340EOhf'
 document.getElementById('apodDate').setAttribute('max', new Date().toISOString().split('T')[0])
 document.querySelector('.link-pictureSection').addEventListener('click', getAPOD)
 document.querySelector('#apodDate').addEventListener('change', getBAPOD)
