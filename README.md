@@ -9,6 +9,8 @@ A simple website, with JavaScript used to retrieve [NASA's Astronomy Picture of 
 
 The media type information - image or video - is extracted from json to correctly write the appropriate img or iframe tag, so the user will not be limited to images.
 
+![](nasademo.gif)
+
 ## Next steps?
 - Change the date picker to a drop-down menu for better accessibility
 - Implement a search future for retrieval of relevant archive files
