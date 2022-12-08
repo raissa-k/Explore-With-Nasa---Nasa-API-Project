@@ -1,0 +1,52 @@
+.videohero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover !important;
+    background: no-repeat center center scroll;
+	pointer-events: none;
+}
+
+.videohero::before {
+  z-index: 1;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.85) 80%, black 100%);
+  mix-blend-mode: normal;
+}
+
+.videohero iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100vw;
+	height: 100vh;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.videohero iframe {
+		height: 56.25vw;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.videohero iframe {
+		width: 177.78vh;
+	}
+}

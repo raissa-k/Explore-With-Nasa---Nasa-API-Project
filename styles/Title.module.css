@@ -1,0 +1,20 @@
+.title {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	letter-spacing: 0.2rem;
+	word-spacing: 0.3rem;
+	line-height: 200%;
+	text-align: left;
+	margin: 0;
+	line-height: 1.15;
+	font-size:medium;
+	position: relative;
+	z-index: 1;
+	text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem 3rem;
+}
