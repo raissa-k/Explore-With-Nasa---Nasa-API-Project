@@ -9,7 +9,7 @@ A simple website with Next.js used to retrieve [NASA's Astronomy Picture of the 
 
 The media type information - image or video - is extracted from json to correctly write the appropriate img or iframe tag, so the user will not be limited to images.
 
-![](nasademo.gif)
+![demo](https://user-images.githubusercontent.com/91985540/206390337-462100cd-e8e4-4f1b-9f39-fad16854db32.gif)
 
 ## Next steps?
 -  [x] Rewrite in React
