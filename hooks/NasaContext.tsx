@@ -46,7 +46,6 @@ export default function NasaProvider({ children }: NasaProviderPropTypes) {
 		const convertedDate = {
 			date: userDate
 		}
-		console.log(userDate, convertedDate)
 		setDate(convertedDate);
 	};
 
